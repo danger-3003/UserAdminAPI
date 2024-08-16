@@ -17,6 +17,9 @@ mongoose.connect("mongodb+srv://danger-3003:immortalNS1213@testing.qgsqq.mongodb
 
 app.use("/data/admin",adminRoutes);
 app.use("/data/user",userRoutes);
+app.get("/",(req,res)=>{
+    res.send("Welcome to the API");
+})
 
 app.listen(3000);
 
