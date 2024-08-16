@@ -9,10 +9,6 @@ const user = express.Router();
 user.use(cors());
 user.use(bodyParser.json());
 
-// mongoose.connect('mongodb://127.0.0.1:27017/User_Admin_Data')
-// .then(()=>{console.log("Database connected")})
-// .catch(()=>{console.log("error in connecting to database")})
-
 //creating new user in the DB
 user.post('/setUser',(req,res)=>{
     const user={

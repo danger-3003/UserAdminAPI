@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
         axios.post('http://localhost:3000/data/user/setUser',data)
         .then((res)=>console.log(res))
         .catch((err)=>console.log(err));
+        event.target.reset();
     }
 
     return (

@@ -11,7 +11,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-mongoose.connect("mongodb://127.0.0.1:27017/User_Admin_Data")
+mongoose.connect("mongodb+srv://danger-3003:immortalNS1213@testing.qgsqq.mongodb.net/?retryWrites=true&w=majority&appName=Testing")
 .then(()=>{console.log('Connected to Database')})
 .catch((err)=>{console.log(err)})
 
