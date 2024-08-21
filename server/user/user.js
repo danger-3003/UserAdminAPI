@@ -28,7 +28,7 @@ user.post('/setUser',(req,res)=>{
 })
 
 //getting user credentials by "params --- :id"
-user.get('/getUser/:id',(req,res)=>{
+user.get('/:id',(req,res)=>{
     const username = req.params.id;
     userData.findOne({name:username})
     .then((response)=>{
